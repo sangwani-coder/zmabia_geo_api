@@ -8,9 +8,32 @@ A FastAPI-based REST API that provides structured access to Zambian geographic d
 - **Global Search**: Search for any city across the entire country.
 - **Validation**: Automatic validation of province names and search queries.
 
+
 ## Setup Instructions
 
 1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/yourusername/zambia_geo_api.git](https://github.com/yourusername/zambia_geo_api.git)
-   cd zambia_geo_api
+
+      git clone [https://github.com/yourusername/zambia_geo_api.git](https://github.com/yourusername/zambia_geo_api.git)
+      cd zambia_geo_api
+
+2. Create a Virtual Environment
+   
+      python -m venv venv
+      source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. Install Dependencies
+
+      pip install -r requirements.txt
+
+3. Run the API
+
+      uvicorn app.main:app --reload
+
+
+## API Endpoints
+
+|------------|---------------|
+| Method | Endpoint | Description|
+| GET |  /api/v1/provinces | List all provinces and capitals|
+| GET |  /api/v1/provinces/{name}/cities | Get cities for a specific province|
+| GET | /api/v1/cities/search?q={query} | Search for cities by name|
