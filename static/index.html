@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/flag.png" type="image/png">
+    <link rel="icon" href="/static/flag.png" type="image/svg+xml">
+    <title>Zambia Geo API</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🇿🇲 Zambia Geo API</h1>
+            <p>Access structured geographic data for Zambian provinces and cities/towns.</p>
+            <div class="cta-buttons">
+                <a href="/docs" class="btn primary">Swagger UI</a>
+                <a href="/redoc" class="btn secondary">ReDoc</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>What is this API?</h2>
+            <p>This API provides a RESTful interface for the <code>zambia_geo</code> Python package. It allows developers to query all 10 provinces, list cities/towns by province, and perform global city searches.</p>
+        </section>
+
+        <section id="endpoints">
+            <h2>BaseUrl</h2>
+            <div class="endpoint">
+                <h3><code>https://zambiageo.pythonanywhere.com</code></h3>
+            </div>
+            <h2>Endpoints</h2>
+            <div class="endpoint">
+                <h3><code>GET /api/v1/provinces</code></h3>
+                <p>Returns a list of all provinces and their capitals.</p>
+                <pre><code>[{"name": "Lusaka", "capital": "Lusaka"}, ...]</code></pre>
+            </div>
+
+            <div class="endpoint">
+                <h3><code>GET /api/v1/cities/search?q=Kitwe</code></h3>
+                <p>Search for cities across all provinces.</p>
+                <pre><code>[{"name": "Kitwe", "population": 522000}]</code></pre>
+            </div>
+        </section>
+
+        <section id="maintainers">
+            <h2>Maintainers & Contributing</h2>
+            <p>This project is maintained by the <a href="https://github.com/sangwani-coder/zmabia_geo_api/">sangwani-coder</a>. We welcome contributors! If you find a bug or want to add a feature, please open a PR on <a href="https://github.com/sangwani-coder/zmabia_geo_api/">GitHub.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zambia Geo Project. Powered by FastAPI.</p>
+    </footer>
+</body>
+</html>

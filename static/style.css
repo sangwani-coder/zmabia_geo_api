@@ -1,0 +1,18 @@
+:root {
+    --primary: #1a5e1a; /* Zambia Green */
+    --secondary: #ff9900; /* Zambia Orange */
+    --dark: #333;
+    --light: #f4f4f4;
+}
+
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background: var(--light); }
+.container { max-width: 900px; margin: auto; padding: 20px; }
+
+header { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
+.btn { padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 5px; display: inline-block; }
+.primary { background: var(--secondary); color: white; }
+.secondary { background: white; color: var(--primary); }
+
+section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; }
+code { font-family: monospace; color: var(--secondary); }

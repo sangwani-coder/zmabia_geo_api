@@ -36,3 +36,11 @@ A FastAPI-based REST API that provides structured access to Zambian geographic d
 | GET |  /api/v1/provinces | List all provinces and capitals|
 | GET |  /api/v1/provinces/{name}/cities | Get cities for a specific province|
 | GET | /api/v1/cities/search?q={query} | Search for cities by name|
+
+Interactive Documentation
+
+Once the server is running, visit:
+
+         Swagger UI: http://127.0.0.1:8000/docs
+
+         ReDoc: http://127.0.0.1:8000/redoc
