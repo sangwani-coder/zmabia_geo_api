@@ -1,7 +1,9 @@
 from zambia_geo import get_all_provinces, get_province_cities
 
+
 def list_provinces():
     return get_all_provinces()
+
 
 def fetch_cities_by_province(province_name: str):
     # Standardize input for validation
@@ -9,6 +11,7 @@ def fetch_cities_by_province(province_name: str):
     if province_name.lower() not in provinces:
         return None
     return get_province_cities(province_name)
+
 
 def search_cities_globally(query: str):
     results = []
