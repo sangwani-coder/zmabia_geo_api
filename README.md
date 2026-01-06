@@ -13,27 +13,26 @@ A FastAPI-based REST API that provides structured access to Zambian geographic d
 
 1. **Clone the repository**
 
-      git clone [https://github.com/yourusername/zambia_geo_api.git](https://github.com/yourusername/zambia_geo_api.git)
-      cd zambia_geo_api
+            git clone [https://github.com/yourusername/zambia_geo_api.git](https://github.com/yourusername/zambia_geo_api.git)
+            cd zambia_geo_api
 
 2. Create a Virtual Environment
    
-      python -m venv venv
-      source venv/bin/activate  # On Windows: venv\Scripts\activate
+            python -m venv venv
+            source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependencies
 
-      pip install -r requirements.txt
+            pip install -r requirements.txt
 
 3. Run the API
 
-      uvicorn app.main:app --reload
+            uvicorn app.main:app --reload
 
 
 ## API Endpoints
-
-|------------|---------------|
-| Method | Endpoint | Description|
+| Method | Endpoint | Description |
+|---------|----------|-------------|
 | GET |  /api/v1/provinces | List all provinces and capitals|
 | GET |  /api/v1/provinces/{name}/cities | Get cities for a specific province|
 | GET | /api/v1/cities/search?q={query} | Search for cities by name|
