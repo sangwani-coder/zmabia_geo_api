@@ -2,6 +2,8 @@
 
 A FastAPI-based REST API that provides structured access to Zambian geographic data, powered by the [zambia_geo](https://github.com/sangwani-coder/zambia_geo/) package.
 
+![Python CI](https://github.com/sangwani-coder/zmabia_geo_api/actions/workflows/tests.yml/badge.svg)
+
 ## Features
 
 Features & Endpoints
@@ -19,7 +21,8 @@ We love contributors! Please see our CONTRIBUTING.md for details on our code of 
 ### 📜 Maintainers
 
 Maintained by the _Zambian Developer Community_.
-Lead Contributor: Sangwani Zyambo [github](https://github.com/sangwani-coder/:
+
+- Lead Contributor: Sangwani Zyambo [github](https://github.com/sangwani-coder/:
 
 ## Setup Instructions
 
