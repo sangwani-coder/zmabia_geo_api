@@ -17,6 +17,15 @@ def get_province_cities(province_name: str):
     if cities is None:
         raise HTTPException(status_code=404, detail="Province not found")
     return cities
+   
+
+@router.get(
+    "/provinces/{province_name}/constituencies", response_model=List)
+def get_province_constituencies(province_name: str):
+    consts = services.fetch_constituencies_by_province(province_name)
+    if consts is None:
+        raise HTTPException(status_code=404, detail="Province not found")
+    return consts
 
 
 @router.get("/cities/search", response_model=List[schemas.CityBase])

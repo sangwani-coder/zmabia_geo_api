@@ -47,8 +47,9 @@ Maintained by the _Zambian Developer Community_.
 | Method | Endpoint | Description |
 |---------|----------|-------------|
 | GET |  /api/v1/provinces | List all provinces and capitals|
-| GET |  /api/v1/provinces/{name}/cities | Get cities for a specific province|
+| GET |  /api/v1/provinces/{name}/cities | Get towns for a specific province|
 | GET | /api/v1/cities/search?q={query} | Search for cities by name|
+| GET | /api/v1/provinces/{province_name}/constituencies/ | Get constituencies for specific town|
 
 Interactive Documentation
 

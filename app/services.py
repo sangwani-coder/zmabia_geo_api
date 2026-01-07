@@ -1,4 +1,4 @@
-from zambia_geo import get_all_provinces, get_province_cities
+from zambia_geo import get_all_provinces, get_province_cities, get_constituencies
 
 
 def list_provinces():
@@ -11,6 +11,14 @@ def fetch_cities_by_province(province_name: str):
     if province_name.lower() not in provinces:
         return None
     return get_province_cities(province_name)
+
+
+def fetch_constituencies_by_province(province_name: str):
+    results = [] 
+    for const in get_constituencies(province_name):
+        results.append(const)
+
+    return results
 
 
 def search_cities_globally(query: str):
